@@ -1,0 +1,4 @@
+yfinance >= 0.0.0
+pandas >= 0.0.0
+streamlit >= 0.0.0
+matplotlib >= 0.0.0
