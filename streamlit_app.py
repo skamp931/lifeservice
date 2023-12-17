@@ -3,7 +3,8 @@ import streamlit as st
 st.write("テストページ")
 
 # Using object notation
-add_selectbox = st.sidebar.selectbox(
+with st.sidebar:
+    add_selectbox = st.selectbox(
     "How would you like to be contacted?",
     ("Email", "Home phone", "Mobile phone")
 )
