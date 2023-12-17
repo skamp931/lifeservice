@@ -6,7 +6,7 @@ st.write("テストページ")
 with st.sidebar:
     add_selectbox = st.selectbox(
     "マネー情報",
-    ("幼稚園", "小学生", "高校生", "大学制")
+    ("幼稚園", "小学生", "高校生", "大学生")
 )
 
 # Using "with" notation
@@ -27,3 +27,12 @@ if add_selectbox =="小学生":
 if add_selectbox =="高校生":
     st.write("高校生の時にかかる費用")
     st.write("高校")
+
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+    
