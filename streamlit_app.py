@@ -29,11 +29,11 @@ if add_selectbox =="高校生":
     st.write("高校生の時にかかる費用")
     st.write("高校")
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+#with st.sidebar:
+#    with st.echo():
+#        st.write("This code will be printed to the sidebar.")
 
     with st.spinner("Loading..."):
-        time.sleep(5)
+#        time.sleep(5)
     st.success("Done!")
     
